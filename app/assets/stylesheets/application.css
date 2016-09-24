@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    margin: 0;
+}
+#top-image {
+    background:url('https://s3.amazonaws.com/contrapost-web/12672140_549041635262990_7189172050821907586_o.jpg') -25px -50px;
+    position:fixed ;
+    top:0;
+    width:100%;
+    z-index:0;
+    height:100%;
+    background-size: calc(100% + 50px);
+}
+
+#text {
+    color: antiquewhite;
+    font-size: 23px;
+    font-family: "Andale Mono", "Georgia", serif;
+}
+
+.centered {
+    position: absolute;
+    top: 45%;
+    left: 38%;
+}
