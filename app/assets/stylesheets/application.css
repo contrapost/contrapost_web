@@ -27,11 +27,67 @@ body {
     background-size: calc(100% + 50px);
 }
 
+#mobile-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('https://s3.amazonaws.com/contrapost-web/12672140_549041635262990_7189172050821907586_o.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 #text {
     color: antiquewhite;
+    font-weight: bold;
     font-size: 23px;
     font-family: "Andale Mono", "Georgia", serif;
+    animation-name: text-animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes text-animation {
+    0% {opacity: 1;}
+    5% {opacity: 0.8;}
+    10% {opacity: 0.7;}
+    15% {opacity: 0.6;}
+    20% {opacity: 0.5;}
+    25% {opacity: 0.4;}
+    30% {opacity: 0.3;}
+    35% {opacity: 0.1;}
+    40% {opacity: 0.05;}
+    45% {opacity: 0.025;}
+    50% {opacity: 0;}
+    55% {opacity: 0.025;}
+    60% {opacity: 0.05;}
+    65% {opacity: 0.1;}
+    70% {opacity: 0.3;}
+    75% {opacity: 0.4;}
+    80% {opacity: 0.5;}
+    85% {opacity: 0.6;}
+    90% {opacity: 0.7;}
+    95% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+
+/* Standard syntax */
+/*@keyframes text-animation {*/
+    /*0% {opacity: 1;}*/
+    /*10% {opacity: 0.8;}*/
+    /*20% {opacity: 0.6;}*/
+    /*30% {opacity: 0.4;}*/
+    /*40% {opacity: 0.2;}*/
+    /*50% {opacity: 0;}*/
+    /*60% {opacity: 0.2;}*/
+    /*70% {opacity: 0.4;}*/
+    /*80% {opacity: 0.6;}*/
+    /*90% {opacity: 0.8;}*/
+    /*100% {opacity: 1;}*/
+/*}*/
 
 .centered {
     position: absolute;

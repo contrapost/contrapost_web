@@ -16,7 +16,7 @@
 //= require_tree .
 
 $(document).ready(function() {
-    var movementStrength = 100;
+    var movementStrength = 25;
     var height = movementStrength / $(window).height();
     var width = movementStrength / $(window).width();
     $("#top-image").mousemove(function(e){
