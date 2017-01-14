@@ -14,7 +14,7 @@
  *= require_self
  */
 
-* { box-sizing: border-box; }
+/** { box-sizing: border-box; }*/
 
 body {
     margin: 0;
@@ -36,32 +36,47 @@ body {
     pointer-events: none;
 }
 
-#top-image {
-    background:url('https://s3.amazonaws.com/contrapost-web/12672140_549041635262990_7189172050821907586_o.jpg') -25px -50px;
+.top-image {
     position:fixed;
     top:0;
     width:100%;
     z-index:0;
     height:100%;
     background-size: calc(100% + 50px);
+}
+
+.mobile-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#image_1 {
+    background: url('https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/12672140_549041635262990_7189172050821907586_o.jpg?oh=80cc62997eb08b20f364e7eba8539f90&oe=590D766A') -25px -50px;
     animation-name: background-animation;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
-#mobile-image {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('https://s3.amazonaws.com/contrapost-web/12672140_549041635262990_7189172050821907586_o.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+#image_1_mobile {
+    background-image: url('https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/12672140_549041635262990_7189172050821907586_o.jpg?oh=80cc62997eb08b20f364e7eba8539f90&oe=590D766A');
     animation-name: background-animation;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+}
+
+#image_2 {
+    background: url('https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10334276_377716209062201_6539378377410383133_n.jpg?oh=8b23c5a4344473d95e2fe24a49654abc&oe=590A35E4') no-repeat;
+    background-size: cover;
+}
+
+#image_2_mobile {
+    background-image: url('https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10334276_377716209062201_6539378377410383133_n.jpg?oh=8b23c5a4344473d95e2fe24a49654abc&oe=590A35E4');
 }
 
 #text {
@@ -145,7 +160,7 @@ body {
 @media screen and (max-device-width: 1024px) {
     .centered_down {
         position: absolute;
-        top: 90%;
+        top: 85%;
         left: 39%;
     }
 }
