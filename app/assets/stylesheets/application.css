@@ -90,6 +90,7 @@ body {
 }
 
 #back_link {
+    outline: none;
     color: antiquewhite;
     font-weight: bolder;
     font-size: 23px;
