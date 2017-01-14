@@ -45,7 +45,7 @@ body {
     height:100%;
     background-size: calc(100% + 50px);
     animation-name: background-animation;
-    animation-duration: 13s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
@@ -60,7 +60,7 @@ body {
     height: 100%;
     z-index: -1;
     animation-name: background-animation;
-    animation-duration: 13s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
@@ -72,6 +72,13 @@ body {
     animation-name: text-animation;
     animation-duration: 7s;
     animation-iteration-count: infinite;
+}
+
+#back_link {
+    color: antiquewhite;
+    font-weight: bolder;
+    font-size: 23px;
+    font-family: "Andale Mono", "Georgia", serif;
 }
 
 /* Chrome, Safari, Opera */
@@ -100,31 +107,37 @@ body {
 }
 
 @-webkit-keyframes background-animation {
-    0% {filter:contrast(100%) saturate(100%) ;}
-    5% {filter:contrast(110%) saturate(110%) ;}
-    10% {filter:contrast(130%) saturate(130%) ;}
-    15% {filter:contrast(160%) saturate(160%) ;}
-    20% {filter:contrast(200%) saturate(200%) ;}
-    25% {filter:contrast(250%) saturate(250%) ;}
-    30% {filter:contrast(310%) saturate(310%) ;}
-    35% {filter:contrast(380%) saturate(380%) ;}
-    40% {filter:contrast(460%) saturate(460%) ;}
-    45% {filter:contrast(550%) saturate(550%) ;}
-    50% {filter:contrast(650%) saturate(650%) ;}
-    55% {filter:contrast(550%) saturate(550%) ;}
-    60% {filter:contrast(460%) saturate(460%) ;}
-    65% {filter:contrast(380%) saturate(380%) ;}
-    70% {filter:contrast(310%) saturate(310%) ;}
-    75% {filter:contrast(250%) saturate(250%) ;}
-    80% {filter:contrast(200%) saturate(200%) ;}
-    85% {filter:contrast(160%) saturate(160%) ;}
-    90% {filter:contrast(130%) saturate(130%) ;}
-    95% {filter:contrast(110%) saturate(110%) ;}
-    100% {filter:contrast(100%) saturate(100%) ;}
+    /*0% {filter:contrast(100%) saturate(100%) ; rotation: 0deg}*/
+    5% {filter:contrast(110%) saturate(110%)    ; /*transform: rotate(0deg)   */}
+    10% {filter:contrast(130%) saturate(130%)   ; /*transform: rotate(18deg)  */}
+    15% {filter:contrast(160%) saturate(160%)   ; /*transform: rotate(36deg)  */}
+    20% {filter:contrast(200%) saturate(200%)   ; /*transform: rotate(54deg)  */}
+    25% {filter:contrast(250%) saturate(250%)   ; /*transform: rotate(72deg)  */}
+    30% {filter:contrast(310%) saturate(310%)   ; /*transform: rotate(90deg)  */}
+    35% {filter:contrast(380%) saturate(380%)   ; /*transform: rotate(108deg) */}
+    40% {filter:contrast(460%) saturate(460%)   ; /*transform: rotate(126deg) */}
+    45% {filter:contrast(550%) saturate(550%)   ; /*transform: rotate(144deg) */}
+    50% {filter:contrast(650%) saturate(650%)   ; /*transform: rotate(162deg) */}
+    55% {filter:contrast(550%) saturate(550%)   ; /*transform: rotate(180deg) */}
+    60% {filter:contrast(460%) saturate(460%)   ; /*transform: rotate(198deg) */}
+    65% {filter:contrast(380%) saturate(380%)   ; /*transform: rotate(216deg) */}
+    70% {filter:contrast(310%) saturate(310%)   ; /*transform: rotate(234deg) */}
+    75% {filter:contrast(250%) saturate(250%)   ; /*transform: rotate(252deg) */}
+    80% {filter:contrast(200%) saturate(200%)   ; /*transform: rotate(270deg) */}
+    85% {filter:contrast(160%) saturate(160%)   ; /*transform: rotate(288deg) */}
+    90% {filter:contrast(130%) saturate(130%)   ; /*transform: rotate(306deg) */}
+    95% {filter:contrast(110%) saturate(110%)   ; /*transform: rotate(324deg) */}
+    100% {filter:contrast(100%) saturate(100%)  ; /*transform: rotate(342deg) */}
 }
 
 .centered {
     position: absolute;
     top: 45%;
     left: 38%;
+}
+
+.centered_down {
+    position: absolute;
+    top: 90%;
+    left: 45%;
 }
