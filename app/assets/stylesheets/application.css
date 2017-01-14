@@ -44,6 +44,9 @@ body {
     z-index:0;
     height:100%;
     background-size: calc(100% + 50px);
+    animation-name: background-animation;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
 }
 
 #mobile-image {
@@ -56,6 +59,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+    animation-name: background-animation;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
 }
 
 #text {
@@ -93,20 +99,29 @@ body {
     100% {opacity: 1;}
 }
 
-/* Standard syntax */
-/*@keyframes text-animation {*/
-    /*0% {opacity: 1;}*/
-    /*10% {opacity: 0.8;}*/
-    /*20% {opacity: 0.6;}*/
-    /*30% {opacity: 0.4;}*/
-    /*40% {opacity: 0.2;}*/
-    /*50% {opacity: 0;}*/
-    /*60% {opacity: 0.2;}*/
-    /*70% {opacity: 0.4;}*/
-    /*80% {opacity: 0.6;}*/
-    /*90% {opacity: 0.8;}*/
-    /*100% {opacity: 1;}*/
-/*}*/
+@-webkit-keyframes background-animation {
+    0% {filter:contrast(100%) saturate(100%) ;}
+    5% {filter:contrast(110%) saturate(110%) ;}
+    10% {filter:contrast(130%) saturate(130%) ;}
+    15% {filter:contrast(160%) saturate(160%) ;}
+    20% {filter:contrast(200%) saturate(200%) ;}
+    25% {filter:contrast(250%) saturate(250%) ;}
+    30% {filter:contrast(310%) saturate(310%) ;}
+    35% {filter:contrast(380%) saturate(380%) ;}
+    40% {filter:contrast(460%) saturate(460%) ;}
+    45% {filter:contrast(550%) saturate(550%) ;}
+    50% {filter:contrast(650%) saturate(650%) ;}
+    55% {filter:contrast(550%) saturate(550%) ;}
+    60% {filter:contrast(460%) saturate(460%) ;}
+    65% {filter:contrast(380%) saturate(380%) ;}
+    70% {filter:contrast(310%) saturate(310%) ;}
+    75% {filter:contrast(250%) saturate(250%) ;}
+    80% {filter:contrast(200%) saturate(200%) ;}
+    85% {filter:contrast(160%) saturate(160%) ;}
+    90% {filter:contrast(130%) saturate(130%) ;}
+    95% {filter:contrast(110%) saturate(110%) ;}
+    100% {filter:contrast(100%) saturate(100%) ;}
+}
 
 .centered {
     position: absolute;
