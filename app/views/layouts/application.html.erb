@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Contrapost</title>
+    <meta name="theme-color" content="#000000">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,5 +11,10 @@
 
   <body>
     <%= yield %>
+    <a href="<%= Random.rand(1...3) %>">
+      <div class="centered_down">
+        <p id="back_link"><<&CONTRAPOST_ME?</p>
+      </div>
+    </a>
   </body>
 </html>
