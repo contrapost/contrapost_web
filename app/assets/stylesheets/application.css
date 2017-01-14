@@ -14,12 +14,31 @@
  *= require_self
  */
 
+* { box-sizing: border-box; }
+
 body {
     margin: 0;
 }
+
+.video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
 #top-image {
     background:url('https://s3.amazonaws.com/contrapost-web/12672140_549041635262990_7189172050821907586_o.jpg') -25px -50px;
-    position:fixed ;
+    position:fixed;
     top:0;
     width:100%;
     z-index:0;
