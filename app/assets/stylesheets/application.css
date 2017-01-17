@@ -57,16 +57,16 @@ body {
 }
 
 #image_1 {
-    background: url('https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/12672140_549041635262990_7189172050821907586_o.jpg?oh=80cc62997eb08b20f364e7eba8539f90&oe=590D766A') -25px -50px;
+    background: url('https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/1901942_377714405729048_2066234170293118476_n.jpg?oh=0e3174ec750ef64bda8cf8f262bf846d&oe=591CA232') -25px -50px;
     animation-name: background-animation;
-    animation-duration: 4s;
+    animation-duration: 0.005s;
     animation-iteration-count: infinite;
 }
 
 #image_1_mobile {
     background-image: url('https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/12672140_549041635262990_7189172050821907586_o.jpg?oh=80cc62997eb08b20f364e7eba8539f90&oe=590D766A');
     animation-name: background-animation;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 

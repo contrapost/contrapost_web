@@ -1,0 +1,16 @@
+<% if request.variant.include? :desktop %>
+
+    <div class="video-background">
+      <div class="video-foreground">
+        <iframe src="https://www.youtube.com/embed/33sFAJYZmeo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=hzrj6LAruus" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+<% else %>
+    <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+      <iframe frameborder="0" height="100%" width="100%"
+              src="https://www.youtube.com/embed/33sFAJYZmeo?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=hzrj6LAruus">
+      </iframe>
+    </div>
+
+<% end %>
