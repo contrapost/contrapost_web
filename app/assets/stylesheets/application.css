@@ -57,21 +57,22 @@ body {
 }
 
 #image_1 {
-    background: url('https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/1901942_377714405729048_2066234170293118476_n.jpg?oh=0e3174ec750ef64bda8cf8f262bf846d&oe=591CA232') -25px -50px;
-    animation-name: background-animation;
+    background: url('http://pics.livejournal.com/contrapost/pic/000bex37') /*-25px -50px*/;
+    background-size: cover;
+    /*animation-name: background-animation;
     animation-duration: 0.005s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;*/
 }
 
 #image_1_mobile {
-    background-image: url('https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/1901942_377714405729048_2066234170293118476_n.jpg?oh=0e3174ec750ef64bda8cf8f262bf846d&oe=591CA232');
+    background-image: url('http://pics.livejournal.com/contrapost/pic/000bex37');
     animation-name: background-animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 #image_2 {
-    background: url('https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10334276_377716209062201_6539378377410383133_n.jpg?oh=8b23c5a4344473d95e2fe24a49654abc&oe=590A35E4') no-repeat;
+    background: url('https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10334276_377716209062201_6539378377410383133_n.jpg?oh=8b23c5a4344473d95e2fe24a49654abc&oe=590A35E4') /*no-repeat*/;
     background-size: cover;
 }
 
